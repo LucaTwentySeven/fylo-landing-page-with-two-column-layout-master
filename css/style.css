@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+:root {
+    /* Primary colors */
+    --Very-Dark-Blue: hsl(243, 87%, 12%); /* Very Dark Blue */
+    --Desaturated-Blue: hsl(238, 22%, 44%); /*  */
+    /* Neutral colors */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%); /* Light Grayish Blue */
+    --Light-Gray: hsl(0, 0%, 75%); /* Light Gray */
+    --White: hsl(0, 0%, 100%);
+    /* Accent colors */
+    --Bright-Blue: hsl(224, 93%, 58%); /* Bright Blue */
+    --Moderate-Cyan: hsl(170, 45%, 43%); /* Moderate Cyan */
+}
+
+/* CSS Reset Start */
+
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+    vertical-align: baseline;
+}
+img {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* CSS Reset End */
+
+/* CSS Normalize Start */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+h1, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+h1 {
+    font-size: clamp(1.625rem, 1.1411rem + 1.6129vw, 2.25rem);
+    padding: 6vh 2vh 2vh;
+}
+h3 {
+    font-size: clamp(1.25rem, 1.0565rem + 0.6452vw, 1.5rem);
+    padding: 12vh 2vh 2vh;
+}
+img {
+    width: 100%;
+}
+p {
+    padding: 2vh;
+}
+
+/* CSS Normalize End */
+
+header, section, footer {
+    width: 100%;
+    height: 100%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+}
+footer {
+    padding: 10vh 5vh;
+    text-align: left;
+    color: var(--White);
+    background-color: var(--Very-Dark-Blue);
+}
+.button {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--Moderate-Cyan);
+    text-decoration: none;
+    padding-bottom: 8px;
+    margin: 4vh 0;
+    border-bottom: 1px solid var(--Moderate-Cyan);
+}
+.button:hover {
+    opacity: 0.8;
+} 
+i.icon-social:hover  {
+    color: var(--Moderate-Cyan);
+    border-color: var(--Moderate-Cyan);
+}
+.button > svg {
+    padding-top: 2px;
+    margin-left: 10px;
+}
+#intro, #about {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0 6vh;
+}
+#intro > img, #about > img {
+    padding: 0 2vh;
+}
+#about {
+    background-color: var(--Light-Grayish-Blue);
+}
+#CTA {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 5vh;
+    background-color: var(--Desaturated-Blue);
+}
+#CTA > div > h3, #CTA > div > p {
+    color: var(--White);
+}
+#CTA h3 {
+    padding: 2vh;
+}
+.logo img {
+    width: 80px;
+}
+nav {
+    text-align: right;
+}
+nav ul li, nav ul li a {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--Very-Dark-Blue);
+    text-decoration: none;
+    padding: 0 10px;
+}
+nav ul li:last-of-type a {
+    padding-right: 0;
+}
+blockquote {
+    padding: 2vh 0 4vh;
+}
+.newsletter-form {
+    padding: 2vh;
+}
+input[type=text], input[type=submit] {
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    padding: 2vh;
+    margin: 1.5vh 0;
+    border-radius: 4px;
+}
+input[type=text] {
+    border: 1px solid var(--Very-Dark-Blue);
+}
+input[type=text]:focus {
+    border: 1px solid var(--Moderate-Cyan);
+}
+input:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+input[type=submit] {
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Bright-Blue);
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.separator {
+    width: 100%;
+    height: 53px;
+    background-image: url('https://supraweb.dev/demos/fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-cite {
+    max-width: 350px;
+    font-size: 14px;
+    color: var(--Very-Dark-Blue);
+    text-align: left;
+    padding: 20px 30px;
+    margin: 30px;
+    background-color: var(--White);
+    border-radius: 4px;
+    box-shadow: 0 0 15px -5px var(--Very-Dark-Blue);
+}
+.testimonial > div {
+    display: inline-block;
+}
+.testimonial > div > img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.testimonial p:first-of-type {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+    padding: 0 0 2px;
+}
+.testimonial p:last-of-type {
+    font-size: 12px;
+    color: var(--Very-Dark-Blue);
+    padding: 0;
+}
+footer > svg {
+    margin-bottom: 4vh;
+}
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+.contact > svg, .contact > p {
+    display: inline-block;
+}
+.contact-det > p {
+    padding: 1vh 2vh;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-det, .contact-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-icons {
+    justify-content: center;
+    padding: 6vh 0;
+}
+.contact ul {
+    margin-top: 4vh;
+}
+.contact > ul > li {
+    padding: 1vh 0;
+}
+.contact > ul > li > a {
+    color: var(--White);
+    text-decoration: none;
+}
+i.icon-social {
+    color: var(--White);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    padding: 0.4em 0.4em;
+    margin: 0 1.4vh;
+}
+.attribution {
+    font-size: 12px;
+    color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+}
+.attribution > p > a {
+    display: inline-block;
+    color: #000;
+    margin: 0;
+}
+.attribution > p {
+    padding-bottom: 0;
+    margin: 1vh 0;
+}
+@media only screen and (min-width: 768px) {
+    header {
+        padding: 2vh 10vw;
+    }
+    #intro, footer, #CTA {
+        padding: 10vw;
+    }
+    #about {
+        padding: 0 10vw 10vh 10vw;
+    }
+    #intro, #about {
+        text-align: left;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    #intro > div, #about > div {
+        width: 50%;
+    }
+    #intro > img, #about > img {
+        width: 50%;
+    }
+    .separator {        
+        background-image: url('https://supraweb.dev/demos/fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg');
+    }
+    input[type=text] {
+        max-width: 50%;
+        margin-right: 2vh;
+    }
+    input[type=submit] {
+        max-width: 220px;
+    }
+    #CTA {
+        flex-direction: row;
+    }
+    #CTA > div {
+        width: 50%;
+        text-align: left;
+    }
+    #CTA > div:first-of-type {
+        padding-right: 14vw;
+    } 
+    #CTA input[type=text] {
+        display: block;
+        max-width: 70%;
+    }
+    .flexbox {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact ul {
+        margin: 0 4vw;
+    }
+    .button {
+        margin: 4vh 2vh;
+    }
+} 
